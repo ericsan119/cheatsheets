@@ -1,0 +1,17 @@
+#This is my command lin
+
+#Log in TSCC
+---
+ssh ucsd-train08@tscc.sdsc.edu
+---
+
+Link Jupyter Notebook
+
+In TSCC Terminal 
+---
+jupyter notebook --no-browser --port 3456 &
+---
+In Your Local Terminal
+---
+ssh -NL 3456:localhost:3456 ucsd-train08@tscc-login2.sdsc.edu 
+---
